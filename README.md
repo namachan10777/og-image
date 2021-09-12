@@ -1,5 +1,7 @@
 <a href="https://vercel.com/new/project?template=vercel/og-image"><img width="128" src="https://vercel.com/button" align="right"></a>
 
+forked by @namachan10777
+
 # [Open Graph Image as a Service](https://og-image.vercel.app)
 
 <a href="https://twitter.com/vercel">
