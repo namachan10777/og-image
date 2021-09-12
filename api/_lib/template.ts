@@ -117,8 +117,8 @@ export function getHtml(parsedReq: ParsedRequest) {
         <div>
             <div class="spacer">
             <div class="logo-wrapper">
-                ${images.map((img, i) =>
-                    getPlusSign(i) + getImage(img, widths[i], heights[i])
+                ${images.map((_, i) =>
+                    getPlusSign(i) + getImage(widths[i], heights[i])
                 ).join('')}
             </div>
             <div class="spacer">
@@ -131,11 +131,11 @@ export function getHtml(parsedReq: ParsedRequest) {
 </html>`;
 }
 
-function getImage(src: string, width ='auto', height = '225') {
+function getImage(width ='auto', height = '225') {
     return `<img
         class="logo"
         alt="Generated Image"
-        src="${sanitizeHtml(src)}"
+        src="https://namachan10777.dev/icon.webp"
         width="${sanitizeHtml(width)}"
         height="${sanitizeHtml(height)}"
     />`
